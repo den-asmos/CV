@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+* {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: rgb(37, 30, 26);
+  background-color: #fff0e4;
+}
+
+.info {
+  display: flex;
+  border-bottom: 2px solid chocolate;
+  border-radius: 10px;
+  background-color: #fcf9f6;
+}
+
+.info div {
+  padding: 15px 25px;
+}
+
+.info-text p {
+  font-style: italic;
+}
+
+.info img {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(26, 25, 25, 0.3);
+}
+
+h1, h2 {
+  color: chocolate;
+  margin-bottom: 7px;
+}
+
+.card {
+  border-bottom: 2px solid chocolate;
+  border-radius: 10px;
+  background-color: #fcf9f6;
+  padding: 15px 25px;
+  margin: 15px 0;
+}
+
+.container {
+  max-width: 95%;
+  margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(37, 30, 26);
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: rgb(228, 126, 66);
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.hobbies li {
+  margin-left: 20px;
+  list-style: square;
+}
+
+.hobbies li:nth-child(even) {
+  list-style-type: disc;
+}
+
+.work {
+  width: 50%;
+  text-align: center;
+}
+
+.work thead {
+  background-color: bisque;
+  font-weight: 700;
+}
+
+.user-info {
+  display: flex;
+}
+
+.name, .email, .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.name, .email {
+  width: 50%;
+}
+
+input, textarea{
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid chocolate;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #fcf9f6;
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .container .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
